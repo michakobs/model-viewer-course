@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="bmw-s1000.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="3.181e-15deg 90deg 0.437m" field-of-view="30deg" camera-target="0m 0.06m -0.001235m">
+      <button class="Hotspot" slot="hotspot-7" data-surface="13 0 2805 2769 2806 0.468 0.346 0.185" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Hinterachse</div>
+      </button><button class="Hotspot" slot="hotspot-8" data-surface="51 0 3366 3305 3367 0.300 0.121 0.579" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Motor</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-surface="63 0 916 898 923 0.633 0.364 0.003" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Tacho</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-surface="91 0 76 78 79 0.053 0.820 0.126" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Gabel</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>

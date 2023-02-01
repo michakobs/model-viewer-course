@@ -1,0 +1,20 @@
+<model-viewer src="bmw-s1000.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-1" data-surface="13 0 2739 2720 2740 0.167 0.055 0.778" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Hinterachse</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-surface="51 0 3144 3143 3145 0.229 0.018 0.754" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Motor</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-surface="63 0 903 901 916 0.030 0.166 0.804" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Tacho</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-surface="91 0 74 77 76 0.094 0.818 0.089" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Gabel</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

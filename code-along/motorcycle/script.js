@@ -8,8 +8,15 @@ const onProgress = (event) => {
   } else {
     progressBar.classList.remove('hide');
     if (event.detail.totalProgress === 0) {
-      event.target.querySelector('.center-pre-prompt').classList.add('hide');
+      //event.target.querySelector('.center-pre-prompt').classList.add('hide');
     }
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+
+const hotspotClicked =(hotspot)=>{
+
+  const annotation = document.querySelector('.HotspotAnnotation')
+
+  annotation.style.display = (annotation.style.display == "none") ? "block" : "none"
+}
